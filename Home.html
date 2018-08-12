@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+    
+        <meta charset="UTF-8">
+        
+        <title>Document</title>
+    
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css" media="screen,projection">
+        <link type="text/css" rel="stylesheet" href="main.css">
+        <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        
+        <style>
+        
+            body
+            {
+                background:url(http://www.ie-wallpapers.com/data/out/187/35944259-plain-backgrounds.jpg);
+                background-size:120%;
+            }
+            .row
+            {
+                margin-left: 0px;
+                width:60%;
+                float:left;
+            }
+            h3
+            {
+                color:silver;
+                margin-top:200px;
+                font-size:50px;
+            }
+            
+            .b
+            {
+                color:silver;
+            }
+            
+            .a
+            {
+                color:cadetblue;
+            }
+            
+            .s
+            {
+                color:mediumpurple;
+            }
+            
+            .column::after 
+            {
+                content: '';
+                clear: both;
+                display: block;
+            }
+        
+            .column div 
+            {
+                position: relative;
+                float: left;
+                width: 300px;
+                height: 200px;
+                margin: 0 0 0 25px;
+                padding: 0;
+            }
+
+            .column div span 
+            {
+                position: absolute;
+                bottom: -20px;
+                left: 0;
+                z-index: -1;
+                display: block;
+                width: 300px;
+                margin: 0;
+                padding: 0;
+                color: #444;
+                font-size: 18px;
+                text-decoration: none;
+                text-align: center;
+                -webkit-transition: .3s ease-in-out;
+                transition: .3s ease-in-out;
+                opacity: 0;
+            }
+
+            figure 
+            {
+                width:450px;
+                height: 300px;
+                margin: 0;
+                padding: 0;
+                background: #fff;
+                overflow: hidden;
+            }
+
+            figure:hover+span 
+            {
+                bottom: -125px;
+                opacity: 1;
+                color:white;
+                margin-left:80px;
+            }
+
+            /* Zoom In #1 */
+            .hover01 figure img 
+            {
+                -webkit-transform: scale(1);
+                transform: scale(1);
+                -webkit-transition: .3s ease-in-out;
+                transition: .3s ease-in-out;
+            }
+            
+            .hover01 figure:hover img 
+            {
+                -webkit-transform: scale(1.3);
+                transform: scale(1.3);
+            }
+            
+            #i1
+            {
+                margin:100px 100px 0 25px;
+            }
+            
+            #i2
+            {
+                margin:100px;
+            }
+        
+            #i3
+            {
+                margin:100px;
+            }
+            
+        </style>    
+        
+    </head>
+   
+    <body>
+
+        <div class="slider">
+            <ul class="slides">
+                    
+                <li>
+                    <img src="http://jllsly.com/wallpapers/black-and-red-butterfly-wallpapers-images-Is-Cool-Wallpapers.jpg">
+                    <div class="caption right-align">
+                        <a href="Art.html"><h3><strong class="b">Black and White</strong></h3></a>
+                    </div>
+                </li>
+    
+                <li>
+                    <img src="http://www.museofineart.com/wp-content/uploads/2017/05/fine-art-wallpapers-21.jpg"> 
+                    <div class="caption left-align">    
+                        <a href="Art.html"><h3><strong class="a">Art Gallery</strong></h3></a>
+                    </div>                    
+                </li>
+                    
+                <li>    
+                    <img src="https://wallpapersite.com/images/wallpapers/nebula-3840x2160-pink-galaxy-stars-4k-13210.jpg">
+                    <div class="caption bottom-align">
+                        <a href="Space.html"><h3><strong class="s">Space</strong></h3></a>
+                    </div>
+                </li>
+            
+            </ul>
+        </div>
+        
+        <div class="hover01 column">
+            
+            <div id="i1">
+                
+                <figure><a href="B&W.html"><img src="https://images.pexels.com/photos/619419/pexels-photo-619419.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" width="100%"></a></figure>
+                <span><strong>B&W</strong></span>
+                <p> .   </p>
+                
+            </div>
+            
+            <div id="i2">
+                
+                <figure><a href="Art.html"><img src="https://images.wallpaperscraft.com/image/art_inscription_light_117708_3840x2400.jpg" width="120%"></a></figure>
+                <span>Art</span>
+            </div>
+            
+            <div id="i3">
+                
+                <figure><a href="Space.html"><img src="https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/YWAdzU2/the-heavens-0112-twinkling-stars-in-black-space-loop_nyl1lfxf__F0000.png" width="120%"></a></figure>
+                <span><strong>Space</strong></span>
+         
+            </div>
+        
+        </div>
+       
+        
+       
+       
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js "></script>
+         
+        <script>
+                
+                $(document).ready(function(){
+                $('.slider').slider({
+                indicators: false,
+                height: 800,
+                transition: 500,
+                interval: 3000
+                })
+                });
+            
+            
+           
+                
+        </script>
+        
+        
+    </body>
+
+</html>
