@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+    
+        <meta charset="UTF-8">
+        
+        <title>Image Gallery</title>
+    
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css" media="screen,projection">
+        <link type="text/css" rel="stylesheet" href="main.css"> 
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+        <style>
+            
+            body
+            {
+               background: linear-gradient(to top right, #003399 0%, #990000 100%);
+                background-repeat: no-repeat;
+                background-size:100% 100%;
+            }
+            
+            body 
+            {
+                display: flex;
+                min-height: 100vh;
+                flex-direction: column;
+            }
+
+            main
+            {
+                flex: 1 0 auto;
+            }
+            
+            
+            h1
+            {
+                text-align: center;
+                color:#f9075b;
+                font-size: 100px;
+                margin-top: 350px;
+                
+            }
+            
+            .parallax-container
+            {
+                height:900px;   
+            }
+
+             nav
+            {
+                background: linear-gradient(to bottom right, #000099 0%, #cc0000 100%);
+                position: fixed;
+                z-index: 2; 
+            }
+            
+            span
+            {
+                position: relative;
+                left:350%;
+            }
+            
+            #i1
+            {
+                float:left;
+                width:730px;
+                height:425px;
+                position: relative;
+                    
+            }
+            
+            #i2
+            {
+                float:left;
+                width:765px;
+                height:425px;
+                position: relative;
+                top:0px;
+            }
+            
+            #i3
+            {
+                float: left;
+                width:780px;
+                height:500px;
+                position:relative;
+                top:0px;
+                left:0%;
+            }
+            
+            #i4
+            {
+                float:left;
+                width:715px;
+                height:500px;
+                position: relative;
+                top:0px;
+                left:0;
+            }
+            
+            #i5
+            {
+                float:left;
+                width:705px;
+                height: 475px;
+                position: relative;
+                left:0;
+                top:0;
+            }
+            
+            #i6
+            {
+                float:left;
+                width:790px;
+                height: 475px;
+                position: relative;
+                top:0px;
+                left:0;
+            }
+            
+            #images
+            {
+                margin-top: 150px;
+                margin-left: 10px;
+            }
+            footer
+            {
+                background: linear-gradient(to bottom right, #000099 0%, #cc0000 100%); 
+                margin-top: 50px;
+            }
+            
+            .fa 
+            {
+                padding: 20px;
+                font-size: 30px;
+                width: 60px;
+                height:60px;
+                text-align: center;
+                text-decoration: none;
+                position: relative;
+                left: 415px;
+                color:white;
+            }
+
+            .fa:hover 
+            {
+                opacity: 0.7;
+            }
+            
+            h2
+            {
+                position: relative;
+                left:400px;
+            }
+        </style>
+        
+   </head>
+   
+    <body>
+            
+        
+        <nav>
+        
+            <div class="nav-wrapper">
+            
+                <a href="#!" class="brand-logo"><span>Image Gallery</span></a>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">=</i></a>
+                
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="Home.html">Home</a></li>
+                    <li><a href="B&W.html">B&W</a></li>
+                    <li><a href="Art.html">Art</a></li>
+                    <li><a href="Space.html">Space</a></li>
+                </ul>
+            
+            </div>
+        
+        </nav>
+       
+       
+        <ul class="sidenav" id="mobile-demo">
+            
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="B&W.html">Black and White</a></li>
+            <li><a href="Art.html">Art</a></li>
+            <li><a href="Space.html">Space</a></li>
+        
+        </ul>
+        
+         
+            
+        <div class="parallax-container">
+          
+            <div class="parallax"><img src="https://wallpapershome.com/images/pages/pic_h/18936.jpg"></div>
+            <h1>Art Gallery</h1>
+            
+        </div>
+             
+   
+        <div id="images">
+     
+            
+            <img class="responsive-img" id="i1" src="http://longwallpapers.com/Desktop-Wallpaper/modern-art-wallpaper-desktop-For-Desktop-Wallpaper.jpg">
+            
+            <img class="responsive-img" id="i2" src="http://yodobi.com/4k-Wallpapers/bicycle-art-wallpapers-hd-Is-4K-Wallpaper.jpg">  
+            
+            <img class="responsive-img" id="i3" src="https://wallpapertag.com/wallpaper/full/f/d/e/565128-top-colorful-trippy-wallpapers-1920x1200-for-4k-monitor.jpg">
+           
+            <img  class="responsive-img" id="i4" src="https://wallpapersite.com/images/wallpapers/lion-3840x2160-artwork-colorful-hd-5621.jpg">
+             
+            <img class="responsive-img" id="i5" src="https://wallpaper.wiki/wp-content/uploads/2017/05/wallpaper.wiki-Magnificent-Artistic-Images-PIC-WPE0012121.jpg">
+            
+            <img class="responsive-img" id="i6" src="http://eskipaper.com/images/artistic-wallpaper-14.jpg">      
+    
+        </div> 
+        
+         
+         
+         <footer class="page-footer">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <h2>Follow On</h2>
+                
+                <a href="https://www.facebook.com/profile.php?id=100010952867851" class="fa fa-facebook"></a>
+                <a href="https://www.linkedin.com/in/manoj-kumar-843249157/" class="fa fa-linkedin"></a>
+                <a href="https://www.instagram.com/manoj_kumar_8_7/" class="fa fa-instagram"></a>
+              
+              </div>
+             
+            </div>
+          </div>
+        </footer>
+         
+         
+         
+         
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js "></script>
+        
+        <script>
+        
+            $(document).ready(function()
+            {
+                $('.tabs').tabs();
+            });
+        
+        </script>
+        
+        <script> 
+            
+             $(document).ready(function(){
+                 $('.parallax').parallax();
+            });
+        
+        </script>
+        
+        <script>
+        
+            $(document).ready(function()
+            {
+                $('.materialboxed').materialbox();
+            });
+      
+        
+        </script>
+        
+        <script>
+            
+            $(document).ready(function(){
+            $('.sidenav').sidenav();
+            });
+        
+        </script>
+    
+    </body>
+    
+</html>
